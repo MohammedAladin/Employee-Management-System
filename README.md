@@ -4,6 +4,18 @@
 
 This project is an Employee Management System implemented in Java, utilizing JDBC for database interactions. It allows users to perform various operations such as creating an employee table, inserting employees, displaying employee information, updating employee details, and performing batch updates.
 
+Also this Java project uses JDBC for seamless database interactions. Key components include:
+
+- **Statements:** Executing SQL queries and updates, with PreparedStatements for performance and security.
+
+- **Batches:** Efficient execution of multiple SQL statements in a single round-trip, optimizing database interactions.
+
+- **ResultSets:** Retrieving and iterating over query results for displaying employee information.
+
+- **CachedRowSet:** Offline manipulation of result sets, enhancing performance through reduced database connection time.
+
+These components collectively enhance the efficiency of the Employee Management System.
+
 ## Table of Contents
 
 - [Project Structure](#project-structure)
