@@ -64,7 +64,7 @@ In your project's `Resources` folder, locate the `dp.properties` file. Open the 
 To build and run the Maven project, follow these steps:
 
 #### 1. Clone the Repository:
- ```git clone https://github.com/MohammedAladin/employee-management-system.git```
+ ```git clone https://github.com/MohammedAladin/Employee-Management-System.git```
 
 #### 2. Navigate to the Project Directory:
  ```cd employee-management-system```
