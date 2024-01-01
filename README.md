@@ -69,3 +69,8 @@ The application provides a console-based user interface for managing employee da
 
 Follow the on-screen prompts to interact with the system and perform the desired operations.
 
+## Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or create a pull request. Follow the Contributing Guidelines for details.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
