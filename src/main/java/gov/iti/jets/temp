@@ -1,0 +1,109 @@
+package gov.jets.iti;
+
+import java.util.Random;
+
+public class Employee {
+    private int id, age, vacationBalance;
+    private String firstName, lastName, gender, address, phoneNumber;
+
+    public Employee(int id, int age, int vacationBalance, String firstName, String lastName,
+                    String gender, String address, String phoneNumber) {
+        this.id = id;
+        this.age = age;
+        this.vacationBalance = vacationBalance;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
+    }
+
+    // Getters and setters (omitted for brevity)
+}
+
+public interface EmployeeDAO {
+    void createTable();
+
+    void insert(Employee employee);
+
+    void updateBatch();
+
+    boolean exists(int id);
+
+    // Additional methods for querying and updating employees
+}
+
+public class EmployeeDAOImpl implements EmployeeDAO {
+    private final DataSource dataSource;
+
+    public EmployeeDAOImpl(DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
+
+    @Override
+    public void createTable() {
+        // Implementation to create the Employee table if not exists
+    }
+
+    @Override
+    public void insert(Employee employee) {
+        // Implementation to insert an employee
+    }
+
+    @Override
+    public void updateBatch() {
+        // Implementation to perform a batch update
+    }
+
+    @Override
+    public boolean exists(int id) {
+        // Implementation to check if an employee with the given id exists
+        return false;
+    }
+
+    // Additional implementations for querying and updating employees
+}
+
+public interface UserInterface {
+    void displayMenu();
+
+    void handleUserInput();
+
+    // Additional methods for user interaction
+}
+
+public class ConsoleUserInterface implements UserInterface {
+    private final EmployeeDAO employeeDAO;
+
+    public ConsoleUserInterface(EmployeeDAO employeeDAO) {
+        this.employeeDAO = employeeDAO;
+    }
+
+    @Override
+    public void displayMenu() {
+        // Implementation to display the menu options
+    }
+
+    @Override
+    public void handleUserInput() {
+        // Implementation to handle user input and perform actions accordingly
+    }
+
+    // Additional implementations for user interaction
+}
+
+public class Application {
+    public static void main(String[] args) {
+        DataSource dataSource = DataSourceFactory.createDataSource();
+        EmployeeDAO employeeDAO = new EmployeeDAOImpl(dataSource);
+        UserInterface userInterface = new ConsoleUserInterface(employeeDAO);
+
+        // Initialize the application
+        employeeDAO.createTable();
+
+        // Display the menu and handle user input
+        userInterface.displayMenu();
+        userInterface.handleUserInput();
+    }
+}
+
