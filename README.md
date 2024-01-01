@@ -64,17 +64,14 @@ In your project's `Resources` folder, locate the `dp.properties` file. Open the 
 To build and run the Maven project, follow these steps:
 
 #### 1. Clone the Repository:
-git clone https://github.com/your-username/employee-management-system.git
+ ```git clone https://github.com/your-username/employee-management-system.git```
 
 #### 2. Navigate to the Project Directory:
-cd employee-management-system
+ ```cd employee-management-system```
 
 #### 3. Build and Run with Maven:
 Maven simplifies the build process. Use the following commands:
-mvn clean install compile exec:java
-
-Build the project using the following command:
-javac -cp .;<path-to-your-jar-files> gov/iti/jets/*.java
+ ```mvn clean install compile exec:java```
 
 ## Usage
 The application provides a console-based user interface for managing employee data. The main menu allows users to perform various operations, including creating the employee table, inserting employees, displaying employee information, updating employees, and performing batch updates.
